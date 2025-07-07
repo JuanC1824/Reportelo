@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil público</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      color: #24292f;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 240px;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar h3, .sidebar ul {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      padding: 8px 0;
+      cursor: pointer;
+    }
+
+    .sidebar li:hover {
+      color: #0969da;
+    }
+
+    .main {
+      flex-grow: 1;
+      padding: 0 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 80px;
+    }
+
+    .profile-pic {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .profile-pic img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+    }
+
+    .profile-pic button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: 1px solid #d0d7de;
+      background: #f6f8fa;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .profile-pic button:hover {
+      background-color: #eaeef2;
+    }
+
+    .top-button {
+      float: right;
+      margin: 20px;
+      background: #f6f8fa;
+      padding: 6px 12px;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .top-button:hover {
+      background-color: #eaeef2;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #57606a;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="top-button">Ve a tu perfil personal</button>
+
+  <div class="container">
+    <div class="sidebar">
+      <h3>JuanC1824</h3>
+      <p style="color: gray;">Su cuenta personal</p>
+      <ul>
+        <li><strong>Perfil público</strong></li>
+        <li>Cuenta</li>
+        <li>Apariencia</li>
+        <li>Accesibilidad</li>
+        <li>Notificaciones</li>
+        <br>
+        <h4>Acceso</h4>
+        <li>Facturación y planes</li>
+        <li>Correos electrónicos</li>
+        <li>Contraseña y autenticación</li>
+        <li>Sesiones</li>
+        <li>Claves SSH y GPG</li>
+        <li>Organizaciones</li>
+        <li>Empresas</li>
+        <li>Moderación</li>
+        <br>
+        <h4>Código, planificación y automatización</h4>
+        <li>Repositorios</li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <h2>Perfil público</h2>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" placeholder="Tu nombre...">
+      <p class="note">Tu nombre puede aparecer en GitHub donde contribuyas o te mencionen. Puedes eliminarlo en cualquier momento.</p>
+
+      <label for="email">Correo electrónico público</label>
+      <select id="email">
+        <option>Seleccione un correo electrónico verificado para mostrar</option>
+      </select>
+      <p class="note">Puede administrar direcciones de correo electrónico verificadas en su <a href="#">configuración de correo electrónico</a></p>
+
+      <label for="bio">Biografía</label>
+      <textarea id="bio" placeholder="Cuéntanos un poco sobre ti"></textarea>
+      <p class="note">Puedes <code>@mencionar</code> a otros usuarios y organizaciones para vincularlos.</p>
+
+      <label for="pronombres">Pronombres</label>
+      <select id="pronombres">
+        <option>No especificar</option>
+        <option>Él/Él</option>
+        <option>Ella/Ella</option>
+        <option>Elle/Elle</option>
+      </select>
+
+      <label for="url">URL</label>
+      <input type="text" id="url" placeholder="https://tusitio.com">
+
+      <div class="profile-pic">
+        <h3>Foto de perfil</h3>
+        <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Avatar">
+        <br>
+        <button><i class="fa-solid fa-pen"></i> Editar</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
